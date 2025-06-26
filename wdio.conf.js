@@ -20,7 +20,7 @@ exports.config = {
   // The path of the spec files will be resolved relative from the directory of
   // of the config file unless it's absolute.
   //
-  specs: ["../tests/specs/**/*spec.js"],
+  specs: ["./tests/specs/**/*.js"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -50,9 +50,11 @@ exports.config = {
   capabilities: [
     {
       browserName: "chrome",
+      maxInstances: 5,
     },
     {
       browserName: "MicrosoftEdge",
+      maxInstances: 5,
     },
   ],
 
